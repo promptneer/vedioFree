@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.mp4
+*.pt
+*.pth
+output/
+demo_out/
+.env

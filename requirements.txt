@@ -1,0 +1,19 @@
+# 核心依赖
+torch>=2.0
+numpy>=1.24
+# AI 决策（DeepSeek 兼容 OpenAI SDK）
+openai>=1.0
+# 模板解析（YAML 可选，JSON 内置）
+pyyaml>=6.0
+# 字幕绘制
+pillow>=10.0
+# 批量进度条
+tqdm>=4.60
+# 测试
+pytest>=7.0
+
+# 说明：
+# 1. FFmpeg 需单独安装（apt/brew/官网），不在 pip 范围内。
+# 2. 只要 CPU 版 torch 可显著减小体积：
+#      pip install torch --index-url https://download.pytorch.org/whl/cpu
+#    再 pip install -r requirements.txt（torch 已装时会跳过）。
